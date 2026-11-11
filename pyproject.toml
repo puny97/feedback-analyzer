@@ -1,0 +1,23 @@
+[project]
+name = "project-feedback-analyser"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "punydokreativ", email = "puneet.k@dokreativ.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi[standard]>=0.136.3",
+    "google-genai>=2.8.0",
+    "pydantic>=2.13.4",
+    "requests>=2.34.2",
+    "python-dotenv>=1.2.2"
+]
+
+[project.scripts]
+project-feedback-analyser = "project_feedback_analyser:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
